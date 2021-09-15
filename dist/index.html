@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - CREATE A DATABASE FOR PET SHOP SCENARIO with Shan</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+
+<head>
+  <h1 style="text-align:center"> CREATE A DATABASE FOR PET SHOP SCENARIO </h1>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="font">
+    <h3 style="color:black">CREATING A COLLECTION REGARDING PET INFORMATION</h3>
+    use petShop;<br>
+    db.createCollection("petDetails");<br>
+    db.petDetails.insertMany([
+    <br>
+    {
+    "petName" : "lucky",
+    "petType" : "dog",
+    "breedType" : "Labrador",
+    "Age" : "15 Days"
+    },
+    <br>
+    {
+    "petName" : "Charlie",
+    "petType" : "dog",
+    "breedType" : "Pomerian",
+    "Age" : "20 Days"
+    },<br>
+
+    {
+    "petName" : "Sharmi",
+    "petType" : "dog",
+    "breedType" : "Pug",
+    "Age" : "25 Days"
+    },
+    <br>
+    {
+    "petName" : "Meha",
+    "petType" : "parrot",
+    "breedType" : "Golden Macaw",
+    "Age" : "11 Days"
+    },
+    <br>
+    {
+    "petName" : "Thangakili",
+    "petType" : "parrot",
+    "breedType" : "Artic Parrot",
+    "Age" : "12 Days"
+    },
+    <br>
+    {
+    "petName" : "Putin",
+    "petType" : "parrot",
+    "breedType" : "Russian Parrot",
+    "Age" : "19 Days"
+    },
+    <br>
+    {
+    "petName" : "Oliver",
+    "petType" : "Cat",
+    "breedType" : "persian Cat",
+    "Age" : "30 Days"
+    },
+    <br>
+    {
+    "petName" : "Prince",
+    "petType" : "Cat",
+    "breedType" : "bengal Cat",
+    "Age" : "25 Days"
+    },
+    <br>
+    {
+    "petName" : "Tollig",
+    "petType" : "Cat",
+    "breedType" : "Snip Cat",
+    "Age" : "30 Days"
+    },
+    <br>
+    {
+    "petName" : "Sushi",
+    "petType" : "Fish",
+    "breedType" : "Shark",
+    "Age" : "2 Days"
+    },
+    <br>
+    ])
+
+    <br>
+    <br>
+
+    <a class="photo" href="https://imgur.com/V1VPmuW"><img src="https://i.imgur.com/V1VPmuW.png" title="source: imgur.com" /></a>
+
+    <h3 style="color:black">READING ALL PET INFORMATION</h3>
+
+    use petShop;<br>
+    db.petDetails.find();<br>
+    <br><br>
+
+    <a href="https://imgur.com/OKno5CT"><img src="https://i.imgur.com/OKno5CT.png" title="source: imgur.com" /></a>
+
+    <h3 style="color:black">CREATING A COLLECTION REGARDING BUYER INFORMATION</h3>
+
+    use petShop;<br>
+    db.createCollection("buyerDetails");<br>
+    db.buyerDetails.insertMany([<br>{<br>
+    "buyerName" : "Shan",
+    "Needed Pet Vaccination" : true,
+    "breedReq" : "Labrador",
+    "PhoneNo" : "1234567890"
+    },<br>
+
+    {
+    "buyerName" : "Madhan",
+    "Needed Pet Vaccination" : true,
+    "breedReq" : "Pomerian",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    {
+    "buyerName" : "Mohan",
+    "Needed Pet Vaccination" : true,
+    "breedReq" : "Pug",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    {
+    "buyerName" : "Balaji",
+    "Needed Pet Vaccination" : false,
+    "breedReq" : "Golden Macaw",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    {
+    "buyerName" : "Thiru",
+    "Needed Pet Vaccination" : false,
+    "breedReq" : "Artic Parrot",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    {
+    "buyerName" : "Sijo",
+    "Needed Pet Vaccination" : false,
+    "breedReq" : "Russian Parrot",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    {
+    "buyerName" : "Ranjith",
+    "Needed Pet Vaccination" : true,
+    "breedReq" : "persian Cat",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    {
+    "buyerName" : "Rajesh",
+    "Needed Pet Vaccination" : true,
+    "breedReq" : "bengal Cat",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    {
+    "buyerName" : "Krishnakanth",
+    "Needed Pet Vaccination" : true,
+    "breedReq" : "Snip Cat",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    {
+    "buyerName" : "KC",
+    "Needed Pet Vaccination" : false,
+    "breedReq" : "Shark",
+    "PhoneNo" : "1234567890"
+    },
+    <br>
+    ])
+    <br><br>
+
+    <a href="https://imgur.com/7CQrR0P"><img src="https://i.imgur.com/7CQrR0P.png" title="source: imgur.com" /></a>
+
+    <h3 style="color:black">READING ALL BUYER INFORMATION</h3>
+
+    use petShop;<br>
+    db.buyerDetails.find();<br><br>
+
+    <a href="https://imgur.com/U4AzDoi"><img src="https://i.imgur.com/U4AzDoi.png" title="source: imgur.com" /></a>
+
+    <h3 style="color:black">READING ALL JOINED INFORMATION REGARDING PETS AND BUYERS</h3>
+
+    use petShop;<br>
+    db.buyerDetails.aggregate([<br>{<br>
+    $lookup: {
+    from: "petDetails",
+    localField: "breedReq",
+    foreignField: "breedType",
+    as: "Results"
+    }<br>
+    }<br>])
+    
+    <br>
+    <br>
+    
+    <a href="https://imgur.com/FOtV62K"><img src="https://i.imgur.com/FOtV62K.png" title="source: imgur.com" /></a>
+    
+     <h3 style="color:black">_______END _____</h3>
+
+    <div>
+
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>
